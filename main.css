@@ -1,11 +1,95 @@
 .header {
-  padding: 80px; /* some padding */
-  text-align: center; /* center the text */
-  background: #1abc9c; /* green background */
-  color: white; /* white text color */
+  padding: 20px;
+  margin: 20px;
+  justify-content: center;
+  text-align: center;
+  align-items: center;
+  display: flex;
+  position: relative;
+  background: #414559;
+  color: #c6d0f5;
+  border-radius: 0.75rem;
 }
 
-/* Increase the font size of the <h1> element */
-.header h1 {
-  font-size: 40px;
+.bio {
+    padding:20px;
+    margin:20px;
+    text-align:left;
+    background:#414559;
+    color:#c6d0f5;
+    border-radius:0.75rem;
+}
+
+.c2 { animation-delay: .5s }
+.c3 { animation-delay: 1s }
+.c4 { animation-delay: 1.5s }
+.c5 { animation-delay: 2ss }
+
+ul {
+  list-style: none;
+  display: table;
+  text-align: center;
+  position: fixed;
+  top: 0;
+  left: 0;
+}
+li {
+  display: table-cell;
+  position: relative;
+  padding: 15px 0;
+}
+a {
+  color: #c6d0f5;
+  text-transform: uppercase;
+  text-decoration: none;
+  letter-spacing: 0.15em;
+  display: inline-block;
+  padding: 15px 20px;
+  position: relative;
+}
+a:after {
+  background: none repeat scroll 0 0 transparent;
+  bottom: 0;
+  content: "";
+  display: block;
+  height: 2px;
+  left: 50%;
+  position: absolute;
+  background: #fff;
+  transition: width 0.3s ease 0s, left 0.3s ease 0s;
+  width: 0;
+}
+a:hover:after {
+  width: 100%;
+  left: 0;
+}
+
+img {
+  max-width: 300px;;
+  border-radius: 0.75rem;
+}
+
+.footer {
+  position: fixed;
+  left: 0;
+  bottom: 0;
+  width: 100%;
+  color: #c6d0f5;
+  text-align: center;
+}
+
+.cssanimation, .cssanimation span {
+    animation-duration: 1s;
+    animation-fill-mode: both;
+}
+
+.cssanimation span { display: inline-block }
+
+.fadeInBottom { animation-name: fadeInBottom }
+@keyframes fadeInBottom {
+    from {
+        opacity: 0;
+        transform: translateY(100%);
+    }
+    to { opacity: 1 }
 }
